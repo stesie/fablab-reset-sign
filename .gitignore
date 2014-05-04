@@ -1,2 +1,6 @@
 *~
 \#*.sch#
+*.backup
+*.new.pcb
+*.pcb-
+*.cmd
