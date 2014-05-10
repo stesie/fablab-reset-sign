@@ -1,18 +1,18 @@
-# release: pcb 20110918
+# release: pcb-gtk 20110918
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["" 600000 500000]
+PCB["" 630000 390000]
 
-Grid[1000.0 0 0 0]
-Cursor[29000 91000 0.000000]
-PolyArea[3100.006200]
+Grid[2500.0 0 0 0]
+Cursor[0 252500 0.000000]
+PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[1000 1000 1000 1000 1500 1000]
 Flags("nameonpcb,uniquename,clearnew,snappin")
-Groups("1,c:2,s:3:4")
-Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+Groups("1,c:2:3:4:5:6,s:7:8")
+Styles["Signal,1000,3600,2000,1000:Power,2501,6000,3500,1000:Fat,4001,6000,3500,1000:Skinny,600,2402,1182,600"]
 
 Symbol[' ' 1800]
 (
@@ -786,21 +786,826 @@ Symbol['~' 1200]
 	SymbolLine[1500 3500 2000 3500 800]
 	SymbolLine[2000 3500 2500 3000 800]
 )
+Attribute("PCB::grid::unit" "mil")
+
+Element["" "RADIAL_CAN-400" "C101" "100n" 90000 42500 30000 -20000 0 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3000 "1" "1" "square"]
+	Pin[20000 0 6000 3000 6600 3000 "2" "2" ""]
+	ElementArc [10000 0 20000 20000 0 360 1000]
+
+	)
+
+Element["" "HEADER10_1" "J101" "unknown" 100000 82500 -5000 -21000 0 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	Pin[20000 0 6000 3000 6600 3800 "3" "3" "edge2"]
+	Pin[30000 0 6000 3000 6600 3800 "4" "4" "edge2"]
+	Pin[40000 0 6000 3000 6600 3800 "5" "5" "edge2"]
+	Pin[40000 -10000 6000 3000 6600 3800 "6" "6" "edge2"]
+	Pin[30000 -10000 6000 3000 6600 3800 "7" "7" "edge2"]
+	Pin[20000 -10000 6000 3000 6600 3800 "8" "8" "edge2"]
+	Pin[10000 -10000 6000 3000 6600 3800 "9" "9" "edge2"]
+	Pin[0 -10000 6000 3000 6600 3800 "10" "10" "edge2"]
+	ElementLine [-5000 5000 45000 5000 1000]
+	ElementLine [45000 -15000 45000 5000 1000]
+	ElementLine [-5000 -15000 45000 -15000 1000]
+	ElementLine [-5000 -15000 -5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+
+	)
+
+Element["" "R025" "R101" "10k" 217500 30000 -12000 2000 2 100 ""]
+(
+	Pin[0 0 6800 3000 7400 3800 "1" "1" "square,edge2"]
+	Pin[-40000 0 6800 3000 7400 3800 "2" "2" "edge2"]
+	ElementLine [-30000 5000 -10000 5000 2000]
+	ElementLine [-30000 -5000 -30000 5000 2000]
+	ElementLine [-30000 -5000 -10000 -5000 2000]
+	ElementLine [-10000 -5000 -10000 5000 2000]
+	ElementLine [-10000 0 0 0 2000]
+	ElementLine [-40000 0 -30000 0 2000]
+
+	)
+
+Element["" "DIP28N" "U101" "unknown" 227500 105000 -5000 17000 2 100 ""]
+(
+	Pin[0 0 6000 3000 6600 2800 "1" "1" "square,edge2"]
+	Pin[-10000 0 6000 3000 6600 2800 "2" "2" "edge2"]
+	Pin[-20000 0 6000 3000 6600 2800 "3" "3" "edge2"]
+	Pin[-30000 0 6000 3000 6600 2800 "4" "4" "edge2"]
+	Pin[-40000 0 6000 3000 6600 2800 "5" "5" "edge2"]
+	Pin[-50000 0 6000 3000 6600 2800 "6" "6" "edge2"]
+	Pin[-60000 0 6000 3000 6600 2800 "7" "7" "edge2"]
+	Pin[-70000 0 6000 3000 6600 2800 "8" "8" "edge2"]
+	Pin[-80000 0 6000 3000 6600 2800 "9" "9" "edge2"]
+	Pin[-90000 0 6000 3000 6600 2800 "10" "10" "edge2"]
+	Pin[-100000 0 6000 3000 6600 2800 "11" "11" "edge2"]
+	Pin[-110000 0 6000 3000 6600 2800 "12" "12" "edge2"]
+	Pin[-120000 0 6000 3000 6600 2800 "13" "13" "edge2"]
+	Pin[-130000 0 6000 3000 6600 2800 "14" "14" "edge2"]
+	Pin[-130000 30000 6000 3000 6600 2800 "15" "15" "edge2"]
+	Pin[-120000 30000 6000 3000 6600 2800 "16" "16" "edge2"]
+	Pin[-110000 30000 6000 3000 6600 2800 "17" "17" "edge2"]
+	Pin[-100000 30000 6000 3000 6600 2800 "18" "18" "edge2"]
+	Pin[-90000 30000 6000 3000 6600 2800 "19" "19" "edge2"]
+	Pin[-80000 30000 6000 3000 6600 2800 "20" "20" "edge2"]
+	Pin[-70000 30000 6000 3000 6600 2800 "21" "21" "edge2"]
+	Pin[-60000 30000 6000 3000 6600 2800 "22" "22" "edge2"]
+	Pin[-50000 30000 6000 3000 6600 2800 "23" "23" "edge2"]
+	Pin[-40000 30000 6000 3000 6600 2800 "24" "24" "edge2"]
+	Pin[-30000 30000 6000 3000 6600 2800 "25" "25" "edge2"]
+	Pin[-20000 30000 6000 3000 6600 2800 "26" "26" "edge2"]
+	Pin[-10000 30000 6000 3000 6600 2800 "27" "27" "edge2"]
+	Pin[0 30000 6000 3000 6600 2800 "28" "28" "edge2"]
+	ElementLine [-135000 -5000 5000 -5000 1000]
+	ElementLine [-135000 -5000 -135000 35000 1000]
+	ElementLine [-135000 35000 5000 35000 1000]
+	ElementLine [5000 -5000 5000 10000 1000]
+	ElementLine [5000 20000 5000 35000 1000]
+	ElementArc [5000 15000 5000 5000 270 180 1000]
+
+	)
+
+Element["" "RADIAL_CAN-400" "C102" "100u" 35000 22500 30000 -20000 0 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3000 "1" "1" "square"]
+	Pin[20000 0 6000 3000 6600 3000 "2" "2" ""]
+	ElementArc [10000 0 20000 20000 0 360 1000]
+
+	)
+
+Element["selected" "HEADER10_1" "J201" "unknown" 20000 225000 21000 -5000 3 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "selected,square"]
+	Pin[0 10000 6000 3000 6600 3800 "2" "2" "selected"]
+	Pin[0 20000 6000 3000 6600 3800 "3" "3" "selected"]
+	Pin[0 30000 6000 3000 6600 3800 "4" "4" "selected"]
+	Pin[0 40000 6000 3000 6600 3800 "5" "5" "selected"]
+	Pin[10000 40000 6000 3000 6600 3800 "6" "6" "selected"]
+	Pin[10000 30000 6000 3000 6600 3800 "7" "7" "selected"]
+	Pin[10000 20000 6000 3000 6600 3800 "8" "8" "selected"]
+	Pin[10000 10000 6000 3000 6600 3800 "9" "9" "selected"]
+	Pin[10000 0 6000 3000 6600 3800 "10" "10" "selected"]
+	ElementLine [-5000 -5000 -5000 45000 1000]
+	ElementLine [-5000 45000 15000 45000 1000]
+	ElementLine [15000 45000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["selected" "R025" "R203" "unknown" 20000 277500 2000 12000 3 100 "selected"]
+(
+	Pin[0 0 6800 3000 7400 3800 "1" "1" "selected,square"]
+	Pin[0 40000 6800 3000 7400 3800 "2" "2" "selected"]
+	ElementLine [5000 10000 5000 30000 2000]
+	ElementLine [-5000 30000 5000 30000 2000]
+	ElementLine [-5000 10000 -5000 30000 2000]
+	ElementLine [-5000 10000 5000 10000 2000]
+	ElementLine [0 0 0 10000 2000]
+	ElementLine [0 30000 0 40000 2000]
+
+	)
+
+Element["selected" "R025" "R202" "unknown" 30000 277500 2000 12000 3 100 "selected"]
+(
+	Pin[0 0 6800 3000 7400 3800 "1" "1" "selected,square"]
+	Pin[0 40000 6800 3000 7400 3800 "2" "2" "selected"]
+	ElementLine [5000 10000 5000 30000 2000]
+	ElementLine [-5000 30000 5000 30000 2000]
+	ElementLine [-5000 10000 -5000 30000 2000]
+	ElementLine [-5000 10000 5000 10000 2000]
+	ElementLine [0 0 0 10000 2000]
+	ElementLine [0 30000 0 40000 2000]
+
+	)
+
+Element["selected" "SIP10" "RP201" "unknown" 46500 225000 11000 -4000 3 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 2800 "1" "1" "selected,square"]
+	Pin[0 10000 6000 3000 6600 2800 "2" "2" "selected"]
+	Pin[0 20000 6000 3000 6600 2800 "3" "3" "selected"]
+	Pin[0 30000 6000 3000 6600 2800 "4" "4" "selected"]
+	Pin[0 40000 6000 3000 6600 2800 "5" "5" "selected"]
+	Pin[0 50000 6000 3000 6600 2800 "6" "6" "selected"]
+	Pin[0 60000 6000 3000 6600 2800 "7" "7" "selected"]
+	Pin[0 70000 6000 3000 6600 2800 "8" "8" "selected"]
+	Pin[0 80000 6000 3000 6600 2800 "9" "9" "selected"]
+	Pin[0 90000 6000 3000 6600 2800 "10" "10" "selected"]
+	ElementLine [-5000 0 -5000 90000 2000]
+	ElementLine [5000 0 5000 90000 2000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementArc [0 0 5000 5000 180 180 2000]
+	ElementArc [0 90000 5000 5000 0 180 2000]
+
+	)
+
+Element["selected" "R025" "R201" "unknown" 62500 310000 -2000 -12000 1 100 "selected"]
+(
+	Pin[0 0 6800 3000 7400 3800 "1" "1" "selected,square"]
+	Pin[0 -40000 6800 3000 7400 3800 "2" "2" "selected"]
+	ElementLine [-5000 -30000 -5000 -10000 2000]
+	ElementLine [-5000 -30000 5000 -30000 2000]
+	ElementLine [5000 -30000 5000 -10000 2000]
+	ElementLine [-5000 -10000 5000 -10000 2000]
+	ElementLine [0 -10000 0 0 2000]
+	ElementLine [0 -40000 0 -30000 2000]
+
+	)
+
+Element["selected" "DIP16" "U102" "unknown" 75000 230000 17000 5000 3 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 2800 "1" "1" "selected,square"]
+	Pin[0 10000 6000 3000 6600 2800 "2" "2" "selected"]
+	Pin[0 20000 6000 3000 6600 2800 "3" "3" "selected"]
+	Pin[0 30000 6000 3000 6600 2800 "4" "4" "selected"]
+	Pin[0 40000 6000 3000 6600 2800 "5" "5" "selected"]
+	Pin[0 50000 6000 3000 6600 2800 "6" "6" "selected"]
+	Pin[0 60000 6000 3000 6600 2800 "7" "7" "selected"]
+	Pin[0 70000 6000 3000 6600 2800 "8" "8" "selected"]
+	Pin[30000 70000 6000 3000 6600 2800 "9" "9" "selected"]
+	Pin[30000 60000 6000 3000 6600 2800 "10" "10" "selected"]
+	Pin[30000 50000 6000 3000 6600 2800 "11" "11" "selected"]
+	Pin[30000 40000 6000 3000 6600 2800 "12" "12" "selected"]
+	Pin[30000 30000 6000 3000 6600 2800 "13" "13" "selected"]
+	Pin[30000 20000 6000 3000 6600 2800 "14" "14" "selected"]
+	Pin[30000 10000 6000 3000 6600 2800 "15" "15" "selected"]
+	Pin[30000 0 6000 3000 6600 2800 "16" "16" "selected"]
+	ElementLine [-5000 -5000 -5000 75000 1000]
+	ElementLine [-5000 75000 35000 75000 1000]
+	ElementLine [35000 75000 35000 -5000 1000]
+	ElementLine [-5000 -5000 10000 -5000 1000]
+	ElementLine [20000 -5000 35000 -5000 1000]
+	ElementArc [15000 -5000 5000 5000 0 180 1000]
+
+	)
+
+Element["selected" "DIP16" "U103" "unknown" 187500 230000 17000 5000 3 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 2800 "1" "1" "selected,square"]
+	Pin[0 10000 6000 3000 6600 2800 "2" "2" "selected"]
+	Pin[0 20000 6000 3000 6600 2800 "3" "3" "selected"]
+	Pin[0 30000 6000 3000 6600 2800 "4" "4" "selected"]
+	Pin[0 40000 6000 3000 6600 2800 "5" "5" "selected"]
+	Pin[0 50000 6000 3000 6600 2800 "6" "6" "selected"]
+	Pin[0 60000 6000 3000 6600 2800 "7" "7" "selected"]
+	Pin[0 70000 6000 3000 6600 2800 "8" "8" "selected"]
+	Pin[30000 70000 6000 3000 6600 2800 "9" "9" "selected"]
+	Pin[30000 60000 6000 3000 6600 2800 "10" "10" "selected"]
+	Pin[30000 50000 6000 3000 6600 2800 "11" "11" "selected"]
+	Pin[30000 40000 6000 3000 6600 2800 "12" "12" "selected"]
+	Pin[30000 30000 6000 3000 6600 2800 "13" "13" "selected"]
+	Pin[30000 20000 6000 3000 6600 2800 "14" "14" "selected"]
+	Pin[30000 10000 6000 3000 6600 2800 "15" "15" "selected"]
+	Pin[30000 0 6000 3000 6600 2800 "16" "16" "selected"]
+	ElementLine [-5000 -5000 -5000 75000 1000]
+	ElementLine [-5000 75000 35000 75000 1000]
+	ElementLine [35000 75000 35000 -5000 1000]
+	ElementLine [-5000 -5000 10000 -5000 1000]
+	ElementLine [20000 -5000 35000 -5000 1000]
+	ElementArc [15000 -5000 5000 5000 0 180 1000]
+
+	)
+
+Element["selected" "DIP16" "U104" "unknown" 277500 230000 17000 5000 3 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 2800 "1" "1" "selected,square"]
+	Pin[0 10000 6000 3000 6600 2800 "2" "2" "selected"]
+	Pin[0 20000 6000 3000 6600 2800 "3" "3" "selected"]
+	Pin[0 30000 6000 3000 6600 2800 "4" "4" "selected"]
+	Pin[0 40000 6000 3000 6600 2800 "5" "5" "selected"]
+	Pin[0 50000 6000 3000 6600 2800 "6" "6" "selected"]
+	Pin[0 60000 6000 3000 6600 2800 "7" "7" "selected"]
+	Pin[0 70000 6000 3000 6600 2800 "8" "8" "selected"]
+	Pin[30000 70000 6000 3000 6600 2800 "9" "9" "selected"]
+	Pin[30000 60000 6000 3000 6600 2800 "10" "10" "selected"]
+	Pin[30000 50000 6000 3000 6600 2800 "11" "11" "selected"]
+	Pin[30000 40000 6000 3000 6600 2800 "12" "12" "selected"]
+	Pin[30000 30000 6000 3000 6600 2800 "13" "13" "selected"]
+	Pin[30000 20000 6000 3000 6600 2800 "14" "14" "selected"]
+	Pin[30000 10000 6000 3000 6600 2800 "15" "15" "selected"]
+	Pin[30000 0 6000 3000 6600 2800 "16" "16" "selected"]
+	ElementLine [-5000 -5000 -5000 75000 1000]
+	ElementLine [-5000 75000 35000 75000 1000]
+	ElementLine [35000 75000 35000 -5000 1000]
+	ElementLine [-5000 -5000 10000 -5000 1000]
+	ElementLine [20000 -5000 35000 -5000 1000]
+	ElementArc [15000 -5000 5000 5000 0 180 1000]
+
+	)
+
+Element["selected" "DIP16" "U105" "unknown" 385000 230000 17000 5000 3 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 2800 "1" "1" "selected,square"]
+	Pin[0 10000 6000 3000 6600 2800 "2" "2" "selected"]
+	Pin[0 20000 6000 3000 6600 2800 "3" "3" "selected"]
+	Pin[0 30000 6000 3000 6600 2800 "4" "4" "selected"]
+	Pin[0 40000 6000 3000 6600 2800 "5" "5" "selected"]
+	Pin[0 50000 6000 3000 6600 2800 "6" "6" "selected"]
+	Pin[0 60000 6000 3000 6600 2800 "7" "7" "selected"]
+	Pin[0 70000 6000 3000 6600 2800 "8" "8" "selected"]
+	Pin[30000 70000 6000 3000 6600 2800 "9" "9" "selected"]
+	Pin[30000 60000 6000 3000 6600 2800 "10" "10" "selected"]
+	Pin[30000 50000 6000 3000 6600 2800 "11" "11" "selected"]
+	Pin[30000 40000 6000 3000 6600 2800 "12" "12" "selected"]
+	Pin[30000 30000 6000 3000 6600 2800 "13" "13" "selected"]
+	Pin[30000 20000 6000 3000 6600 2800 "14" "14" "selected"]
+	Pin[30000 10000 6000 3000 6600 2800 "15" "15" "selected"]
+	Pin[30000 0 6000 3000 6600 2800 "16" "16" "selected"]
+	ElementLine [-5000 -5000 -5000 75000 1000]
+	ElementLine [-5000 75000 35000 75000 1000]
+	ElementLine [35000 75000 35000 -5000 1000]
+	ElementLine [-5000 -5000 10000 -5000 1000]
+	ElementLine [20000 -5000 35000 -5000 1000]
+	ElementArc [15000 -5000 5000 5000 0 180 1000]
+
+	)
+
+Element["selected" "DIP16" "U106" "unknown" 465000 232500 17000 5000 3 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 2800 "1" "1" "selected,square"]
+	Pin[0 10000 6000 3000 6600 2800 "2" "2" "selected"]
+	Pin[0 20000 6000 3000 6600 2800 "3" "3" "selected"]
+	Pin[0 30000 6000 3000 6600 2800 "4" "4" "selected"]
+	Pin[0 40000 6000 3000 6600 2800 "5" "5" "selected"]
+	Pin[0 50000 6000 3000 6600 2800 "6" "6" "selected"]
+	Pin[0 60000 6000 3000 6600 2800 "7" "7" "selected"]
+	Pin[0 70000 6000 3000 6600 2800 "8" "8" "selected"]
+	Pin[30000 70000 6000 3000 6600 2800 "9" "9" "selected"]
+	Pin[30000 60000 6000 3000 6600 2800 "10" "10" "selected"]
+	Pin[30000 50000 6000 3000 6600 2800 "11" "11" "selected"]
+	Pin[30000 40000 6000 3000 6600 2800 "12" "12" "selected"]
+	Pin[30000 30000 6000 3000 6600 2800 "13" "13" "selected"]
+	Pin[30000 20000 6000 3000 6600 2800 "14" "14" "selected"]
+	Pin[30000 10000 6000 3000 6600 2800 "15" "15" "selected"]
+	Pin[30000 0 6000 3000 6600 2800 "16" "16" "selected"]
+	ElementLine [-5000 -5000 -5000 75000 1000]
+	ElementLine [-5000 75000 35000 75000 1000]
+	ElementLine [35000 75000 35000 -5000 1000]
+	ElementLine [-5000 -5000 10000 -5000 1000]
+	ElementLine [20000 -5000 35000 -5000 1000]
+	ElementArc [15000 -5000 5000 5000 0 180 1000]
+
+	)
+
+Element["selected" "DIP16" "U107" "unknown" 555000 232500 17000 5000 3 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 2800 "1" "1" "selected,square"]
+	Pin[0 10000 6000 3000 6600 2800 "2" "2" "selected"]
+	Pin[0 20000 6000 3000 6600 2800 "3" "3" "selected"]
+	Pin[0 30000 6000 3000 6600 2800 "4" "4" "selected"]
+	Pin[0 40000 6000 3000 6600 2800 "5" "5" "selected"]
+	Pin[0 50000 6000 3000 6600 2800 "6" "6" "selected"]
+	Pin[0 60000 6000 3000 6600 2800 "7" "7" "selected"]
+	Pin[0 70000 6000 3000 6600 2800 "8" "8" "selected"]
+	Pin[30000 70000 6000 3000 6600 2800 "9" "9" "selected"]
+	Pin[30000 60000 6000 3000 6600 2800 "10" "10" "selected"]
+	Pin[30000 50000 6000 3000 6600 2800 "11" "11" "selected"]
+	Pin[30000 40000 6000 3000 6600 2800 "12" "12" "selected"]
+	Pin[30000 30000 6000 3000 6600 2800 "13" "13" "selected"]
+	Pin[30000 20000 6000 3000 6600 2800 "14" "14" "selected"]
+	Pin[30000 10000 6000 3000 6600 2800 "15" "15" "selected"]
+	Pin[30000 0 6000 3000 6600 2800 "16" "16" "selected"]
+	ElementLine [-5000 -5000 -5000 75000 1000]
+	ElementLine [-5000 75000 35000 75000 1000]
+	ElementLine [35000 75000 35000 -5000 1000]
+	ElementLine [-5000 -5000 10000 -5000 1000]
+	ElementLine [20000 -5000 35000 -5000 1000]
+	ElementArc [15000 -5000 5000 5000 0 180 1000]
+
+	)
+Rat[110000 42500 5 120000 72500 5  ""]
+Rat[120000 72500 5 157500 105000 5  ""]
+Rat[157500 105000 5 167500 135000 5  ""]
+Rat[110000 42500 5 55000 22500 5  ""]
+Rat[167500 135000 5 217500 260000 5  ""]
+Rat[217500 260000 5 187500 300000 5  ""]
+Rat[217500 260000 5 277500 300000 5  ""]
+Rat[277500 300000 5 307500 260000 5  ""]
+Rat[307500 260000 5 385000 300000 5  ""]
+Rat[385000 300000 5 415000 260000 5  ""]
+Rat[415000 260000 5 465000 302500 5  ""]
+Rat[465000 302500 5 495000 262500 5  ""]
+Rat[495000 262500 5 555000 302500 5  ""]
+Rat[555000 302500 5 585000 262500 5  ""]
+Rat[187500 300000 5 105000 260000 5  ""]
+Rat[120000 82500 5 227500 105000 5  ""]
+Rat[227500 105000 5 217500 30000 5  ""]
+Rat[217500 105000 5 217500 270000 5  ""]
+Rat[217500 270000 5 307500 270000 5  ""]
+Rat[307500 270000 5 415000 270000 5  ""]
+Rat[415000 270000 5 495000 272500 5  ""]
+Rat[495000 272500 5 585000 272500 5  ""]
+Rat[217500 270000 5 105000 270000 5  ""]
+Rat[207500 105000 5 217500 280000 5  ""]
+Rat[217500 280000 5 307500 280000 5  ""]
+Rat[307500 280000 5 415000 280000 5  ""]
+Rat[415000 280000 5 495000 282500 5  ""]
+Rat[495000 282500 5 585000 282500 5  ""]
+Rat[217500 280000 5 105000 280000 5  ""]
+Rat[100000 82500 5 117500 135000 5  ""]
+Rat[140000 82500 5 127500 135000 5  ""]
+Rat[130000 82500 5 137500 135000 5  ""]
+Rat[177500 135000 5 105000 250000 5  ""]
+Rat[187500 135000 5 217500 250000 5  ""]
+Rat[197500 135000 5 307500 250000 5  ""]
+Rat[207500 135000 5 415000 250000 5  ""]
+Rat[217500 135000 5 495000 252500 5  ""]
+Rat[227500 135000 5 585000 252500 5  ""]
+Rat[90000 42500 5 35000 22500 5  ""]
+Rat[90000 42500 5 177500 30000 5  ""]
+Rat[177500 30000 5 167500 105000 5  ""]
+Rat[167500 105000 5 105000 220000 5  ""]
+Rat[105000 230000 5 105000 290000 5  ""]
+Rat[105000 290000 5 217500 290000 5  ""]
+Rat[217500 290000 5 217500 230000 5  ""]
+Rat[217500 230000 5 307500 230000 5  ""]
+Rat[307500 230000 5 307500 290000 5  ""]
+Rat[307500 230000 5 415000 230000 5  ""]
+Rat[415000 230000 5 415000 290000 5  ""]
+Rat[415000 230000 5 495000 232500 5  ""]
+Rat[495000 232500 5 495000 292500 5  ""]
+Rat[495000 292500 5 585000 292500 5  ""]
+Rat[585000 292500 5 585000 232500 5  ""]
 Layer(1 "top")
 (
 )
-Layer(2 "bottom")
+Layer(2 "ground")
 (
 )
-Layer(3 "outline")
+Layer(3 "signal2")
 (
 )
-Layer(4 "spare")
+Layer(4 "signal3")
 (
 )
-Layer(5 "silk")
+Layer(5 "power")
 (
 )
-Layer(6 "silk")
+Layer(6 "bottom")
 (
+	Line[15000 267500 17500 270000 1000 2000 "clearline,selected"]
+	Line[20000 265000 25000 260000 1000 2000 "clearline,selected"]
+	Line[20000 225000 20000 220000 1000 2000 "clearline,selected"]
+	Line[20000 235000 10000 245000 1000 2000 "clearline,selected"]
+	Line[12500 252500 20000 245000 1000 2000 "clearline,selected"]
+	Line[15000 260000 20000 255000 1000 2000 "clearline,selected"]
+	Line[15000 267500 15000 260000 1000 2000 "clearline,selected"]
+	Line[10000 245000 10000 277500 1000 2000 "clearline,selected"]
+	Line[20000 317500 20000 325000 1000 2000 "clearline,selected"]
+	Line[10000 277500 20000 277500 1000 2000 "clearline,selected"]
+	Line[12500 252500 12500 272500 1000 2000 "clearline,selected"]
+	Line[12500 272500 30000 272500 1000 2000 "clearline,selected"]
+	Line[30000 272500 30000 277500 1000 2000 "clearline,selected"]
+	Line[30000 317500 30000 322500 1000 2000 "clearline,selected"]
+	Line[35000 320000 35000 270000 1000 2000 "clearline,selected"]
+	Line[35000 270000 17500 270000 1000 2000 "clearline,selected"]
+	Line[37500 260000 37500 305000 1000 2000 "clearline,selected"]
+	Line[37500 260000 25000 260000 1000 2000 "clearline,selected"]
+	Line[40000 285000 40000 255000 1000 2000 "clearline,selected"]
+	Line[40000 255000 30000 255000 1000 2000 "clearline,selected"]
+	Line[42500 265000 42500 252500 1000 2000 "clearline,selected"]
+	Line[42500 252500 35000 252500 1000 2000 "clearline,selected"]
+	Line[35000 252500 35000 250000 1000 2000 "clearline,selected"]
+	Line[35000 250000 30000 245000 1000 2000 "clearline,selected"]
+	Line[35000 245000 35000 240000 1000 2000 "clearline,selected"]
+	Line[35000 240000 30000 235000 1000 2000 "clearline,selected"]
+	Line[46500 265000 42500 265000 1000 2000 "clearline,selected"]
+	Line[46500 245000 35000 245000 1000 2000 "clearline,selected"]
+	Line[46500 225000 30000 225000 1000 2000 "clearline,selected"]
+	Line[46500 285000 40000 285000 1000 2000 "clearline,selected"]
+	Line[46500 305000 37500 305000 1000 2000 "clearline,selected"]
+	Line[46500 235000 52500 229000 1000 2000 "clearline,selected"]
+	Line[52500 229000 52500 225000 1000 2000 "clearline,selected"]
+	Line[46500 255000 50000 255000 1000 2000 "clearline,selected"]
+	Line[50000 255000 52500 252500 1000 2000 "clearline,selected"]
+	Line[52500 252500 52500 232500 1000 2000 "clearline,selected"]
+	Line[52500 232500 55000 230000 1000 2000 "clearline,selected"]
+	Line[46500 275000 47500 275000 1000 2000 "clearline,selected"]
+	Line[47500 275000 52500 270000 1000 2000 "clearline,selected"]
+	Line[52500 270000 52500 255000 1000 2000 "clearline,selected"]
+	Line[52500 255000 55000 252500 1000 2000 "clearline,selected"]
+	Line[55000 252500 55000 240000 1000 2000 "clearline,selected"]
+	Line[60000 250000 55000 255000 1000 2000 "clearline,selected"]
+	Line[55000 255000 55000 270000 1000 2000 "clearline,selected"]
+	Line[55000 270000 52500 272500 1000 2000 "clearline,selected"]
+	Line[52500 272500 52500 290000 1000 2000 "clearline,selected"]
+	Line[52500 290000 47500 295000 1000 2000 "clearline,selected"]
+	Line[57500 260000 57500 272500 1000 2000 "clearline,selected"]
+	Line[57500 272500 55000 275000 1000 2000 "clearline,selected"]
+	Line[55000 275000 55000 292500 1000 2000 "clearline,selected"]
+	Line[55000 292500 52500 295000 1000 2000 "clearline,selected"]
+	Line[52500 295000 52500 310000 1000 2000 "clearline,selected"]
+	Line[52500 310000 47500 315000 1000 2000 "clearline,selected"]
+	Line[62500 320000 62500 310000 1000 2000 "clearline,selected"]
+	Line[62500 320000 35000 320000 1000 2000 "clearline,selected"]
+	Line[67500 322500 67500 280000 1000 2000 "clearline,selected"]
+	Line[67500 322500 30000 322500 1000 2000 "clearline,selected"]
+	Line[20000 325000 70000 325000 1000 2000 "clearline,selected"]
+	Line[70000 325000 70000 290000 1000 2000 "clearline,selected"]
+	Line[70000 290000 75000 290000 1000 2000 "clearline,selected"]
+	Line[67500 280000 75000 280000 1000 2000 "clearline,selected"]
+	Line[75000 270000 62500 270000 1000 2000 "clearline,selected"]
+	Line[57500 260000 75000 260000 1000 2000 "clearline,selected"]
+	Line[60000 250000 75000 250000 1000 2000 "clearline,selected"]
+	Line[75000 240000 55000 240000 1000 2000 "clearline,selected"]
+	Line[75000 230000 55000 230000 1000 2000 "clearline,selected"]
+	Line[105000 240000 85000 240000 1000 2000 "clearline,selected"]
+	Line[85000 240000 85000 225000 1000 2000 "clearline,selected"]
+	Line[85000 225000 52500 225000 1000 2000 "clearline,selected"]
+	Line[105000 260000 85000 260000 1000 2000 "clearline,selected"]
+	Line[85000 260000 85000 300000 1000 2000 "clearline,selected"]
+	Line[85000 300000 75000 300000 1000 2000 "clearline,selected"]
+	Line[105000 230000 105000 220000 1000 2000 "clearline,selected"]
+	Line[105000 220000 20000 220000 1000 2000 "clearline,selected"]
+)
+Layer(7 "outline")
+(
+)
+Layer(8 "spare")
+(
+)
+Layer(9 "silk")
+(
+)
+Layer(10 "silk")
+(
+)
+NetList()
+(
+	Net("disp1-1" "(unknown)")
+	(
+		Connect("RP201-2")
+		Connect("U102-15")
+	)
+	Net("disp1-2" "(unknown)")
+	(
+		Connect("RP201-4")
+		Connect("U102-1")
+	)
+	Net("disp1-3" "(unknown)")
+	(
+		Connect("RP201-6")
+		Connect("U102-2")
+	)
+	Net("disp1-4" "(unknown)")
+	(
+		Connect("RP201-8")
+		Connect("U102-3")
+	)
+	Net("disp1-5" "(unknown)")
+	(
+		Connect("RP201-10")
+		Connect("U102-4")
+	)
+	Net("disp1-6" "(unknown)")
+	(
+		Connect("R201-2")
+		Connect("U102-5")
+	)
+	Net("disp1-7" "(unknown)")
+	(
+		Connect("R202-2")
+		Connect("U102-6")
+	)
+	Net("disp1-8" "(unknown)")
+	(
+		Connect("R203-2")
+		Connect("U102-7")
+	)
+	Net("GND" "(unknown)")
+	(
+		Connect("C101-2")
+		Connect("C102-2")
+		Connect("J101-8")
+		Connect("U101-8")
+		Connect("U101-22")
+		Connect("U102-8")
+		Connect("U102-13")
+		Connect("U103-8")
+		Connect("U103-13")
+		Connect("U104-8")
+		Connect("U104-13")
+		Connect("U105-8")
+		Connect("U105-13")
+		Connect("U106-8")
+		Connect("U106-13")
+		Connect("U107-8")
+		Connect("U107-13")
+	)
+	Net("unnamed_net1" "(unknown)")
+	(
+		Connect("J101-3")
+		Connect("R101-1")
+		Connect("U101-1")
+	)
+	Net("unnamed_net2" "(unknown)")
+	(
+		Connect("U101-2")
+		Connect("U102-12")
+		Connect("U103-12")
+		Connect("U104-12")
+		Connect("U105-12")
+		Connect("U106-12")
+		Connect("U107-12")
+	)
+	Net("unnamed_net3" "(unknown)")
+	(
+		Connect("U101-3")
+		Connect("U102-11")
+		Connect("U103-11")
+		Connect("U104-11")
+		Connect("U105-11")
+		Connect("U106-11")
+		Connect("U107-11")
+	)
+	Net("unnamed_net4" "(unknown)")
+	(
+		Connect("J101-1")
+		Connect("U101-17")
+	)
+	Net("unnamed_net5" "(unknown)")
+	(
+		Connect("J101-5")
+		Connect("U101-18")
+	)
+	Net("unnamed_net6" "(unknown)")
+	(
+		Connect("J101-4")
+		Connect("U101-19")
+	)
+	Net("unnamed_net7" "(unknown)")
+	(
+		Connect("U101-23")
+		Connect("U102-14")
+	)
+	Net("unnamed_net8" "(unknown)")
+	(
+		Connect("U101-24")
+		Connect("U103-14")
+	)
+	Net("unnamed_net9" "(unknown)")
+	(
+		Connect("U101-25")
+		Connect("U104-14")
+	)
+	Net("unnamed_net10" "(unknown)")
+	(
+		Connect("U101-26")
+		Connect("U105-14")
+	)
+	Net("unnamed_net11" "(unknown)")
+	(
+		Connect("U101-27")
+		Connect("U106-14")
+	)
+	Net("unnamed_net12" "(unknown)")
+	(
+		Connect("U101-28")
+		Connect("U107-14")
+	)
+	Net("unnamed_net13" "(unknown)")
+	(
+		Connect("U103-15")
+	)
+	Net("unnamed_net14" "(unknown)")
+	(
+		Connect("U103-1")
+	)
+	Net("unnamed_net15" "(unknown)")
+	(
+		Connect("U103-2")
+	)
+	Net("unnamed_net16" "(unknown)")
+	(
+		Connect("U103-3")
+	)
+	Net("unnamed_net17" "(unknown)")
+	(
+		Connect("U103-6")
+	)
+	Net("unnamed_net18" "(unknown)")
+	(
+		Connect("U103-5")
+	)
+	Net("unnamed_net19" "(unknown)")
+	(
+		Connect("U103-4")
+	)
+	Net("unnamed_net20" "(unknown)")
+	(
+		Connect("U104-15")
+	)
+	Net("unnamed_net21" "(unknown)")
+	(
+		Connect("U104-1")
+	)
+	Net("unnamed_net22" "(unknown)")
+	(
+		Connect("U104-2")
+	)
+	Net("unnamed_net23" "(unknown)")
+	(
+		Connect("U104-3")
+	)
+	Net("unnamed_net24" "(unknown)")
+	(
+		Connect("U104-6")
+	)
+	Net("unnamed_net25" "(unknown)")
+	(
+		Connect("U104-5")
+	)
+	Net("unnamed_net26" "(unknown)")
+	(
+		Connect("U104-4")
+	)
+	Net("unnamed_net27" "(unknown)")
+	(
+		Connect("U105-15")
+	)
+	Net("unnamed_net28" "(unknown)")
+	(
+		Connect("U105-1")
+	)
+	Net("unnamed_net29" "(unknown)")
+	(
+		Connect("U105-2")
+	)
+	Net("unnamed_net30" "(unknown)")
+	(
+		Connect("U105-3")
+	)
+	Net("unnamed_net31" "(unknown)")
+	(
+		Connect("U105-6")
+	)
+	Net("unnamed_net32" "(unknown)")
+	(
+		Connect("U105-5")
+	)
+	Net("unnamed_net33" "(unknown)")
+	(
+		Connect("U105-4")
+	)
+	Net("unnamed_net34" "(unknown)")
+	(
+		Connect("U106-15")
+	)
+	Net("unnamed_net35" "(unknown)")
+	(
+		Connect("U106-1")
+	)
+	Net("unnamed_net36" "(unknown)")
+	(
+		Connect("U106-2")
+	)
+	Net("unnamed_net37" "(unknown)")
+	(
+		Connect("U106-3")
+	)
+	Net("unnamed_net38" "(unknown)")
+	(
+		Connect("U106-6")
+	)
+	Net("unnamed_net39" "(unknown)")
+	(
+		Connect("U106-5")
+	)
+	Net("unnamed_net40" "(unknown)")
+	(
+		Connect("U106-4")
+	)
+	Net("unnamed_net41" "(unknown)")
+	(
+		Connect("U107-15")
+	)
+	Net("unnamed_net42" "(unknown)")
+	(
+		Connect("U107-1")
+	)
+	Net("unnamed_net43" "(unknown)")
+	(
+		Connect("U107-2")
+	)
+	Net("unnamed_net44" "(unknown)")
+	(
+		Connect("U107-3")
+	)
+	Net("unnamed_net45" "(unknown)")
+	(
+		Connect("U107-6")
+	)
+	Net("unnamed_net46" "(unknown)")
+	(
+		Connect("U107-5")
+	)
+	Net("unnamed_net47" "(unknown)")
+	(
+		Connect("U107-4")
+	)
+	Net("unnamed_net48" "(unknown)")
+	(
+		Connect("J201-10")
+		Connect("RP201-1")
+	)
+	Net("unnamed_net49" "(unknown)")
+	(
+		Connect("J201-9")
+		Connect("RP201-3")
+	)
+	Net("unnamed_net50" "(unknown)")
+	(
+		Connect("J201-8")
+		Connect("RP201-5")
+	)
+	Net("unnamed_net51" "(unknown)")
+	(
+		Connect("J201-7")
+		Connect("RP201-7")
+	)
+	Net("unnamed_net52" "(unknown)")
+	(
+		Connect("J201-5")
+		Connect("RP201-9")
+	)
+	Net("unnamed_net53" "(unknown)")
+	(
+		Connect("J201-4")
+		Connect("R201-1")
+	)
+	Net("unnamed_net54" "(unknown)")
+	(
+		Connect("J201-3")
+		Connect("R202-1")
+	)
+	Net("unnamed_net55" "(unknown)")
+	(
+		Connect("J201-2")
+		Connect("R203-1")
+	)
+	Net("Vcc" "(unknown)")
+	(
+		Connect("C101-1")
+		Connect("C102-1")
+		Connect("J201-1")
+		Connect("R101-2")
+		Connect("U101-7")
+		Connect("U102-10")
+		Connect("U102-16")
+		Connect("U103-10")
+		Connect("U103-16")
+		Connect("U104-10")
+		Connect("U104-16")
+		Connect("U105-10")
+		Connect("U105-16")
+		Connect("U106-10")
+		Connect("U106-16")
+		Connect("U107-10")
+		Connect("U107-16")
+	)
 )
