@@ -77,39 +77,55 @@ C 46400 49100 1 0 0 busripper-1.sym
 {
 T 46400 49500 5 8 0 0 0 0 1
 device=none
+T 46400 49100 5 10 0 1 0 0 1
+net=disp1-1:1
 }
 C 46400 48800 1 0 0 busripper-1.sym
 {
 T 46400 49200 5 8 0 0 0 0 1
 device=none
+T 46400 48800 5 10 0 1 0 0 1
+net=disp1-2:1
 }
 C 46400 48500 1 0 0 busripper-1.sym
 {
 T 46400 48900 5 8 0 0 0 0 1
 device=none
+T 46400 48500 5 10 0 1 0 0 1
+net=disp1-3:1
 }
 C 46400 48200 1 0 0 busripper-1.sym
 {
 T 46400 48600 5 8 0 0 0 0 1
 device=none
+T 46400 48200 5 10 0 1 0 0 1
+net=disp1-4:1
 }
 C 46400 47900 1 0 0 busripper-1.sym
 {
 T 46400 48300 5 8 0 0 0 0 1
 device=none
+T 46400 47900 5 10 0 1 0 0 1
+net=disp1-5:1
 }
 C 46400 47000 1 0 0 busripper-1.sym
 {
 T 46400 47400 5 8 0 0 0 0 1
 device=none
+T 46400 47000 5 10 0 1 0 0 1
+net=disp1-6:1
 }
 C 46400 46500 1 0 0 busripper-1.sym
 {
 T 46400 46900 5 8 0 0 0 0 1
 device=none
+T 46400 46500 5 10 0 1 0 0 1
+net=disp1-7:1
 }
 C 46400 46000 1 0 0 busripper-1.sym
 {
 T 46400 46400 5 8 0 0 0 0 1
 device=none
+T 46400 46000 5 10 0 1 0 0 1
+net=disp1-8:1
 }
