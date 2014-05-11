@@ -1,2 +1,2 @@
-schematics control-board.sch resistor-pack-board.sch
+schematics control-board.sch resistor-pack-board.sch power-supply.sch
 output-name control-board
