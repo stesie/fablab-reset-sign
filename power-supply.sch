@@ -21,6 +21,8 @@ T 47900 50000 5 10 0 0 0 0 1
 device=7805
 T 47700 49700 5 10 1 1 0 6 1
 refdes=U301
+T 46300 48700 5 10 0 0 0 0 1
+footprint=TO220W
 }
 C 42900 49100 1 0 0 diode-1.sym
 {
@@ -28,6 +30,8 @@ T 43300 49700 5 10 0 0 0 0 1
 device=DIODE
 T 43200 49600 5 10 1 1 0 0 1
 refdes=D301
+T 42900 49100 5 10 0 0 0 0 1
+footprint=DIODE_LAY 300
 }
 C 41000 48800 1 0 0 connector2-1.sym
 {
@@ -35,6 +39,8 @@ T 41200 49800 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 41000 49600 5 10 1 1 0 0 1
 refdes=CONN301
+T 41000 48800 5 10 0 0 0 0 1
+footprint=FLEXCONNECTOR 1 2 200
 }
 C 48100 48900 1 270 0 capacitor-1.sym
 {
