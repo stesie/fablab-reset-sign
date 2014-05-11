@@ -373,41 +373,55 @@ device=none
 T 49600 48100 5 10 0 1 0 0 1
 net=disp3-7:1
 }
-U 53200 50800 53200 48300 10 1
+U 53200 50800 53200 48000 10 1
 C 53000 48400 1 0 0 busripper-1.sym
 {
 T 53000 48800 5 8 0 0 0 0 1
 device=none
+T 53000 48400 5 10 0 1 0 0 1
+net=disp4-6:1
 }
 C 53000 48700 1 0 0 busripper-1.sym
 {
 T 53000 49100 5 8 0 0 0 0 1
 device=none
+T 53000 48700 5 10 0 1 0 0 1
+net=disp4-5:1
 }
 C 53000 49000 1 0 0 busripper-1.sym
 {
 T 53000 49400 5 8 0 0 0 0 1
 device=none
+T 53000 49000 5 10 0 1 0 0 1
+net=disp4-4:1
 }
 C 53000 49300 1 0 0 busripper-1.sym
 {
 T 53000 49700 5 8 0 0 0 0 1
 device=none
+T 53000 49300 5 10 0 1 0 0 1
+net=disp4-3:1
 }
 C 53000 49600 1 0 0 busripper-1.sym
 {
 T 53000 50000 5 8 0 0 0 0 1
 device=none
+T 53000 49600 5 10 0 1 0 0 1
+net=disp4-2:1
 }
 C 53000 49900 1 0 0 busripper-1.sym
 {
 T 53000 50300 5 8 0 0 0 0 1
 device=none
+T 53000 49900 5 10 0 1 0 0 1
+net=disp4-1:1
 }
 C 53000 48100 1 0 0 busripper-1.sym
 {
 T 53000 48500 5 8 0 0 0 0 1
 device=none
+T 53000 48100 5 10 0 1 0 0 1
+net=disp4-7:1
 }
 U 56600 50800 56600 48300 10 1
 C 56400 48400 1 0 0 busripper-1.sym
@@ -501,4 +515,11 @@ T 49600 48200 5 8 0 0 0 0 1
 device=none
 T 49600 47800 5 10 0 1 0 0 1
 net=disp3-8:1
+}
+C 53000 47800 1 0 0 busripper-1.sym
+{
+T 53000 48200 5 8 0 0 0 0 1
+device=none
+T 53000 47800 5 10 0 1 0 0 1
+net=disp4-8:1
 }
