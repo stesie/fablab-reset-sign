@@ -11,7 +11,7 @@ symversion=0.1
 T 44600 48900 5 10 0 1 0 0 1
 footprint=RADIAL_CAN 400
 T 45100 48700 5 10 1 1 270 0 1
-refdes=C?
+refdes=C301
 T 44300 48200 5 10 1 1 0 0 1
 value=100u
 }
@@ -20,28 +20,28 @@ C 46300 48700 1 0 0 lm7805-1.sym
 T 47900 50000 5 10 0 0 0 0 1
 device=7805
 T 47700 49700 5 10 1 1 0 6 1
-refdes=U?
+refdes=U301
 }
 C 42900 49100 1 0 0 diode-1.sym
 {
 T 43300 49700 5 10 0 0 0 0 1
 device=DIODE
 T 43200 49600 5 10 1 1 0 0 1
-refdes=D?
+refdes=D301
 }
 C 41000 48800 1 0 0 connector2-1.sym
 {
 T 41200 49800 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 41000 49600 5 10 1 1 0 0 1
-refdes=CONN?
+refdes=CONN301
 }
 C 48100 48900 1 270 0 capacitor-1.sym
 {
 T 48800 48700 5 10 0 0 270 0 1
 device=CAPACITOR
 T 48600 48700 5 10 1 1 270 0 1
-refdes=C?
+refdes=C302
 T 49000 48700 5 10 0 0 270 0 1
 symversion=0.1
 T 47800 48200 5 10 1 1 0 0 1
@@ -54,7 +54,7 @@ C 45700 48900 1 270 0 capacitor-1.sym
 T 46400 48700 5 10 0 0 270 0 1
 device=CAPACITOR
 T 46200 48700 5 10 1 1 270 0 1
-refdes=C?
+refdes=C303
 T 46600 48700 5 10 0 0 270 0 1
 symversion=0.1
 T 45400 48200 5 10 1 1 0 0 1
